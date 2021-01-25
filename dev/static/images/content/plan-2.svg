@@ -18,16 +18,51 @@
 <path fill-rule="evenodd" clip-rule="evenodd" d="M51 71.463V64H19V121H47V131H19V188H51V180.395L61 190L160 189.502V62H60.5L51 71.463ZM60 75H49L51 73V72.8745L60 63.9095V75ZM61 63H159V188.507L62 188.995V176H48V76H61V63ZM48.9094 177L61 188.613V177H48.9094ZM50 72.4591V65H20V120H47V75.4475L50 72.4591ZM47 132H20V187H50V179.914L47 176.914V132Z" fill="#DEB54B"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M16 24H38V59H163V192H38V227H16V24ZM17 25H37V58H17V25ZM17 193H37V226H17V193ZM162 60H17V191H162V60Z" fill="#DEB54B"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M562.997 41.3189L559.714 43.6046L583.714 78.0724L619.823 52.9301L595.823 18.4623L592.541 20.748L590.826 18.286L561.283 38.8569L562.997 41.3189ZM590.577 19.6781L562.675 39.1062L583.246 68.65L611.148 49.2219L590.577 19.6781ZM614.577 54.1459L586.674 73.574L587.246 74.3946L615.148 54.9665L614.577 54.1459ZM561.106 43.8538L563.568 42.1396L586.425 74.966L583.963 76.6803L561.106 43.8538ZM615.969 54.3951L593.112 21.5687L595.574 19.8544L618.431 52.6809L615.969 54.3951ZM584.638 68.8992L610.899 50.614L613.185 53.8966L586.923 72.1819L584.638 68.8992Z" fill="#DEB54B"/>
-<rect width="36" height="36" rx="18" transform="matrix(-1 0 0 1 238 121)" fill="#13638F"/>
-<rect width="16" height="16" rx="8" transform="matrix(-1 0 0 1 228 131)" fill="white"/>
-<rect width="36" height="36" rx="18" transform="matrix(-1 0 0 1 457 24)" fill="#13638F"/>
-<rect width="16" height="16" rx="8" transform="matrix(-1 0 0 1 447 34)" fill="white"/>
-<rect width="36" height="36" rx="18" transform="matrix(-1 0 0 1 508 179)" fill="#13638F"/>
-<rect width="16" height="16" rx="8" transform="matrix(-1 0 0 1 498 189)" fill="white"/>
-<rect width="36" height="36" rx="18" transform="matrix(-1 0 0 1 333 349)" fill="#13638F"/>
-<rect width="16" height="16" rx="8" transform="matrix(-1 0 0 1 323 359)" fill="white"/>
-<rect width="36" height="36" rx="18" transform="matrix(-1 0 0 1 171 367)" fill="#13638F"/>
-<rect width="16" height="16" rx="8" transform="matrix(-1 0 0 1 161 377)" fill="white"/>
+</g>
+<g class="pulse-svg">
+	<circle class="circle first-circle" cx="220" cy="139" opacity="0" r="18"></circle>
+	<circle class="circle second-circle" cx="220" cy="139" opacity="0" r="18"></circle>
+	<circle class="circle third-circle" cx="220" cy="139" opacity="0" r="18"></circle>
+</g>
+<g class="plans__label" data-id="1" data-mess="Жилая комната">
+  <rect x="202" y="121" width="36" height="36" rx="18" fill="#13638F"/>
+  <rect x="212" y="131" width="16" height="16" rx="8" fill="white"/>
+</g>
+<g class="pulse-svg">
+	<circle class="circle first-circle" cx="439" cy="42" opacity="0" r="18"></circle>
+	<circle class="circle second-circle" cx="439" cy="42" opacity="0" r="18"></circle>
+	<circle class="circle third-circle" cx="439" cy="42" opacity="0" r="18"></circle>
+</g>
+<g class="plans__label" data-id="2" data-mess="Балкон">
+  <rect x="421" y="24" width="36" height="36" rx="18" fill="#13638F"/>
+  <rect x="431" y="34" width="16" height="16" rx="8" fill="white"/>
+</g>
+<g class="pulse-svg">
+	<circle class="circle first-circle" cx="490" cy="197" opacity="0" r="18"></circle>
+	<circle class="circle second-circle" cx="490" cy="197" opacity="0" r="18"></circle>
+	<circle class="circle third-circle" cx="490" cy="197" opacity="0" r="18"></circle>
+</g>
+<g class="plans__label" data-id="3" data-mess="Детская">
+  <rect x="472" y="179" width="36" height="36" rx="18" fill="#13638F"/>
+  <rect x="482" y="189" width="16" height="16" rx="8" fill="white"/>
+</g>
+<g class="pulse-svg">
+	<circle class="circle first-circle" cx="315" cy="367" opacity="0" r="18"></circle>
+	<circle class="circle second-circle" cx="315" cy="367" opacity="0" r="18"></circle>
+	<circle class="circle third-circle" cx="315" cy="367" opacity="0" r="18"></circle>
+</g>
+<g class="plans__label" data-id="4" data-mess="Холл">
+  <rect x="297" y="349" width="36" height="36" rx="18" fill="#13638F"/>
+  <rect x="307" y="359" width="16" height="16" rx="8" fill="white"/>
+</g>
+<g class="pulse-svg">
+	<circle class="circle first-circle" cx="153" cy="385" opacity="0" r="18"></circle>
+	<circle class="circle second-circle" cx="153" cy="385" opacity="0" r="18"></circle>
+	<circle class="circle third-circle" cx="153" cy="385" opacity="0" r="18"></circle>
+</g>
+<g class="plans__label" data-id="5" data-mess="С/у">
+  <rect x="135" y="367" width="36" height="36" rx="18" fill="#13638F"/>
+  <rect x="145" y="377" width="16" height="16" rx="8" fill="white"/>
 </g>
 <defs>
 <clipPath id="clip0">

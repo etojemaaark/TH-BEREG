@@ -37,7 +37,7 @@
 	<circle class="circle second-circle" cx="209" cy="243" opacity="0" r="18"></circle>
 	<circle class="circle third-circle" cx="209" cy="243" opacity="0" r="18"></circle>
 </g>
-<g class="plans__label" data-id="1" data-mess="кухня-столовая">
+<g class="plans__label" data-id="1" data-mess="Кухня-столовая">
   <rect x="191" y="225" width="36" height="36" rx="18" fill="#13638F"/>
   <rect x="201" y="235" width="16" height="16" rx="8" fill="white"/>
 </g>
@@ -46,7 +46,7 @@
 	<circle class="circle second-circle" cx="313" cy="103" opacity="0" r="18"></circle>
 	<circle class="circle third-circle" cx="313" cy="103" opacity="0" r="18"></circle>
 </g>
-<g class="plans__label" data-id="2" data-mess="терасса">
+<g class="plans__label" data-id="2" data-mess="Терасса">
   <rect x="295" y="85" width="36" height="36" rx="18" fill="#13638F"/>
   <rect x="305" y="95" width="16" height="16" rx="8" fill="white"/>
 </g>
@@ -55,7 +55,7 @@
 	<circle class="circle second-circle" cx="554" cy="159" opacity="0" r="18"></circle>
 	<circle class="circle third-circle" cx="554" cy="159" opacity="0" r="18"></circle>
 </g>
-<g class="plans__label" data-id="3" data-mess="холл">
+<g class="plans__label" data-id="3" data-mess="Холл">
   <rect x="536" y="141" width="36" height="36" rx="18" fill="#13638F"/>
   <rect x="546" y="151" width="16" height="16" rx="8" fill="white"/>
 </g>
@@ -64,22 +64,18 @@
 	<circle class="circle second-circle" cx="498" cy="413" opacity="0" r="18"></circle>
 	<circle class="circle third-circle" cx="498" cy="413" opacity="0" r="18"></circle>
 </g>
-<g class="plans__label" data-id="4" data-mess="кладовая">
+<g class="plans__label" data-id="4" data-mess="Кладовая">
   <rect x="480" y="395" width="36" height="36" rx="18" fill="#13638F"/>
   <rect x="490" y="405" width="16" height="16" rx="8" fill="white"/>
 </g>
 <g class="pulse-svg">
-	<circle class="circle first-circle" cx="398" cy="405" opacity="0" r="18"></circle>
-	<circle class="circle second-circle" cx="398" cy="405" opacity="0" r="18"></circle>
-	<circle class="circle third-circle" cx="398" cy="405" opacity="0" r="18"></circle>
+	<circle class="circle first-circle" cx="398" cy="413" opacity="0" r="18"></circle>
+	<circle class="circle second-circle" cx="398" cy="413" opacity="0" r="18"></circle>
+	<circle class="circle third-circle" cx="398" cy="413" opacity="0" r="18"></circle>
 </g>
-<g class="plans__label" data-id="4" data-mess="кладовая">
-  <rect x="406" y="395" width="36" height="36" rx="18" fill="#13638F"/>
-  <rect x="416" y="405" width="16" height="16" rx="8" fill="white"/>
-</g>
-
-<rect width="36" height="36" rx="18" transform="matrix(-1 0 0 1 416 395)" fill="#13638F"/>
-<rect width="16" height="16" rx="8" transform="matrix(-1 0 0 1 406 405)" fill="white"/>
+<g class="plans__label" data-id="5" data-mess="С/у">
+  <rect x="380" y="395" width="36" height="36" rx="18" fill="#13638F"/>
+  <rect x="390" y="405" width="16" height="16" rx="8" fill="white"/>
 </g>
 <defs>
 <clipPath id="clip0">
