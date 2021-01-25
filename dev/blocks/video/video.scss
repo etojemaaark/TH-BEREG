@@ -1,0 +1,57 @@
+.video {
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__video {
+    position: relative;
+    height: 550px;
+    cursor: pointer;
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+
+    &-poster {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../images/general/poster.jpg);
+
+      &::before {
+        content: url(../images/general/play.svg);
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .video {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__video {
+      height: 400px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .video {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__video {
+      height: 290px;
+    }
+  }
+}

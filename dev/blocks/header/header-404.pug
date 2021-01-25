@@ -1,0 +1,75 @@
+header.header.header_sticky
+	.header__inner.container
+		.header__logo
+			a(href="/").logo.gohome
+				//- img(src="static/images/general/logo.svg", alt="logo").logo__image
+				//- | ЖК&nbsp;
+				span.logo__text Изумрудный город
+
+		button.header__callback(type="button", data-toggle="modal", data-target="#modal-callback", onclick="yaCounter66156607.reachGoal('clickzvonok'); gtag('event', 'obratniy_zvonok', { 'event_category': 'zvonok', 'event_action': 'click' }); gtag('event', 'page_view', { 'page_path': '/obratniy-zvonok-form' });")
+			+icon("phone")
+
+		button.open-menu
+			.open-menu__inner
+				span
+
+		.header-menu
+			nav.header-menu__nav
+				ul.header-menu__list.gohome-menu
+					li.header-menu__item
+						a(href="#about") О проекте
+					li.header-menu__item
+						a(href="#plans") Планировки
+					li.header-menu__item
+						a(href="#vantage") Преимущества
+					li.header-menu__item
+						a(href="#location") Расположение
+					li.header-menu__item
+						a(href="#gallery") Галерея
+					li.header-menu__item
+						a(href="#contacts") Контакты
+
+			.header-menu__bottom
+				a.header-menu__phone(href="tel:8(800)600-43-35")
+					span.header-menu__phone-label наш телефон:
+					span.header-menu__phone-value 8 (800) 600-43-35
+				a.header-menu__email(href="mailto:info@izumrudgorod-sochi.ru")
+					span.header-menu__email-label наша почта:
+					span.header-menu__email-value info@izumrudgorod-sochi.ru
+
+.mobile-menu
+	.mobile-menu__inner
+		.mobile-menu__head
+			button.header__callback(type="button", data-toggle="modal", data-target="#modal-callback", onclick="yaCounter66156607.reachGoal('clickzvonok'); gtag('event', 'obratniy_zvonok', { 'event_category': 'zvonok', 'event_action': 'click' }); gtag('event', 'page_view', { 'page_path': '/obratniy-zvonok-form' });")
+				+icon("phone")
+
+			.mobile-menu__close
+				+icon("close")
+
+			//- a(href="/").logo
+			//- 	//- img(src="static/images/general/logo.svg", alt="logo").logo__image
+			//- 	//- | ЖК&nbsp;
+			//- 	span.logo__text Loft Park
+
+		.mobile-menu__body
+			ul.menu.gohome-menu
+				li.menu__item
+					a(href="#about") О проекте
+				li.menu__item
+					a(href="#plans") Планировки
+				li.menu__item
+					a(href="#vantage") Преимущества
+				li.menu__item
+					a(href="#location") Расположение
+				li.menu__item
+					a(href="#gallery") Галерея
+				li.menu__item
+					a(href="#contacts") Контакты
+
+		.mobile-menu__foot
+			a.mobile-menu__phone(href="tel:8(800)600-43-35")
+				span.mobile-menu__phone-label наш телефон:
+				span.mobile-menu__phone-value 8 (800) 600-43-35
+			a.mobile-menu__email(href="mailto:info@izumrudgorod-sochi.ru")
+				span.mobile-menu__phone-label наша почта:
+				span.mobile-menu__phone-value info@izumrudgorod-sochi.ru

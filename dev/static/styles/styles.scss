@@ -1,0 +1,55 @@
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.04em;
+}
+
+p {
+  line-height: 140%;
+  letter-spacing: 0.04em;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.error-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: $secondary-light;
+}
+
+// Блоки
+@import "../../blocks/title";
+@import "../../blocks/btn";
+@import "../../blocks/logo";
+@import "../../blocks/input";
+@import "../../blocks/check";
+@import "../../blocks/form";
+
+
+@import "../../blocks/main/main";
+@import "../../blocks/about/about";
+@import "../../blocks/plans/plans";
+@import "../../blocks/help/help";
+@import "../../blocks/advantages/advantages";
+@import "../../blocks/infrastructure/infrastructure";
+@import "../../blocks/documents/documents";
+@import "../../blocks/gallery/gallery";
+@import "../../blocks/header/header";
+@import "../../blocks/footer/footer";
+@import "../../blocks/modals/modals";
+@import "../../blocks/politics/politics";
+@import "../../blocks/404/404";
+// @import "../../blocks/flat/flat";
+// @import "../../blocks/selection/selection";
+// @import "../../blocks/territory/territory";

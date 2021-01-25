@@ -1,0 +1,108 @@
+.form {
+  &__title {
+    font-weight: 500;
+    font-size: 28px;
+  }
+
+  &__desc {
+    margin-bottom: 24px;
+  }
+
+  &__group {
+    margin-bottom: 12px;
+  }
+
+  &__politics {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 12px;
+    line-height: 14px;
+
+    & *:nth-last-child(2) {
+      margin-right: 5px;
+    }
+
+    &-link {
+      color: $secondary;
+      text-decoration: underline;
+
+      &:hover {
+        color: $secondary;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__submit {
+    width: 100%;
+  }
+
+
+
+
+
+  &_invalid {
+    input[type=text],
+    input[type=email],
+    input[type=tel] {
+      &:invalid {
+        color: #D6524C;
+
+        &::placeholder {
+          color: #D6524C;
+        }
+        
+        & + span {
+          color: #D6524C;
+        }
+      }
+    }
+
+    input[type=checkbox]:invalid {
+      & + span {
+        background-color: #D6524C;
+      }
+
+      & ~ * {
+        color: #D6524C;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .form {
+    &__title {
+      margin-bottom: 24px;
+    }
+
+    &__desc {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .form {
+    &__title {
+      font-size: 24px;
+    }
+
+    &__politics {
+      letter-spacing: 0.03em;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .form {
+    &__politics {
+      font-size: 10px;
+      letter-spacing: 0.03em;
+    }
+  }
+}
+

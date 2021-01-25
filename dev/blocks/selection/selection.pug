@@ -1,0 +1,20 @@
+section.selection#selection
+	.container
+		form(action="form.php" method="POST" onsubmit="yaCounter64803034.reachGoal('otpravka_podbor'); gtag('event', 'podbor', { 'event_category': 'otpravit_podbor', 'event_action': 'click' }); gtag('event', 'page_view', { 'page_path': '/otpravka-podbor-form' });").selection-info
+			input(type="hidden" name="title" value="Завявка с фомы Подберем квартиру в апарт-комплексе")
+			input(type="hidden" name="admin_email" value="info@izumrudgorod-sochi.ru")
+			input(type="hidden" name="project_name" value="Изумрудный город")
+			input(type="hidden" name="form_subject" value="Форма Подберем квартиру в апарт-комплексе")
+
+			h2.selection-info__title.title Подберем квартиру в апарт-комплексе
+			p.selection-info__txt Оставьте свои данные и мы перезвоним вам, чтобы обсудить детали вашей заявки
+
+			.consultation-form__group.form__group
+				label.consultation-form__label.form__label(for="h-name") Ваше имя
+				input.consultation-form__input.form__input#h-name(type="text" name="name")
+			.consultation-form__group.form__group
+				label.consultation-form__label.form__label(for="h-phone") Ваш телефон
+				input.consultation-form__input.form__input#h-phone(type="tel", data-phone pattern='[\+]7[\(][0-9]{3}[\)][0-9]{3}[\-][0-9]{2}[\-][0-9]{2}', minlength='16', inputmode='numeric', name="phone")
+			button.consultation-form__btn(type="submit") Отправить заявку
+			.consultation-form__txt Нажимая кнопку  вы соглашаетесь с 
+				a(href="politics.html" target="_blank") политикой конфиденциальности

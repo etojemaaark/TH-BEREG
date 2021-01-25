@@ -1,0 +1,51 @@
+.documents#documents
+	.container
+		h2.documents__title.title Наши документы
+		p.documents__desc Земля находится в полной собственности застройщика и объект строится в полном соответствии со всеми федеральными и региональными законами.
+		.row.documents__list
+			.col-lg-4.col-md-6
+				.documents-item
+					.documents-item__title Разрешение на строительство
+					.documents-item__links
+						a.documents-item__download(href="./static/documents/doc1.pdf" download="" title="Скачать")
+							+icon('download')
+			.col-lg-4.col-md-6
+				.documents-item
+					.documents-item__title Градостроительный план земельного участка
+					.documents-item__links
+						a.documents-item__download(href="./static/documents/doc2.pdf" download="" title="Скачать")
+							+icon('download')
+			.col-lg-4.col-md-6
+				.documents-item
+					.documents-item__title Проектная декларация
+					.documents-item__links
+						a.documents-item__download(href="./static/documents/doc3.pdf" download="" title="Скачать")
+							+icon('download')
+			.col-lg-4.col-md-6
+				.documents-item
+					.documents-item__title Заключение экспертизы
+					.documents-item__links
+						a.documents-item__download(href="./static/documents/doc4.pdf" download="" title="Скачать")
+							+icon('download')
+			.col-lg-4.col-md-6
+				.documents-item
+					.documents-item__title Заключение о соответствии
+					.documents-item__links
+						a.documents-item__download(href="./static/documents/doc5.pdf" download="" title="Скачать")
+							+icon('download')
+			.col-lg-4.col-md-6
+				.documents-item
+					.documents-item__title Заключение экспертизы
+					.documents-item__links
+						a.documents-item__download(href="./static/documents/doc6.pdf" download="" title="Скачать")
+							+icon('download')
+
+		.documents-controls
+			.documents-controls__progress
+				.documents-progress(role="progressbar" aria-valuemin="0" aria-valuemax="100")
+					span.documents-progress__label
+			.documents-controls__arrows
+				button.advantages-controls__btn.documents-controls__prev(type="button")
+					+icon('prev')
+				button.advantages-controls__btn.documents-controls__next(type="button")
+					+icon('next')

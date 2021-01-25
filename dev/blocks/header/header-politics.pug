@@ -1,0 +1,10 @@
+header.header.header_sticky
+	.header__inner.container
+		.header__logo
+			a(href="/").logo.gohome
+				//- img(src="static/images/general/logo.svg", alt="logo").logo__image
+				//- | ЖК&nbsp;
+				span.logo__text Изумрудный город
+
+		button.header__callback(type="button", data-toggle="modal", data-target="#modal-callback", onclick="yaCounter66156607.reachGoal('clickzvonok'); gtag('event', 'obratniy_zvonok', { 'event_category': 'zvonok', 'event_action': 'click' }); gtag('event', 'page_view', { 'page_path': '/obratniy-zvonok-form' });")
+			+icon("phone")

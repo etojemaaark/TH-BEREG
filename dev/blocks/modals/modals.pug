@@ -1,0 +1,96 @@
+#modal-callback.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+	.modal-dialog.modal-dialog-centered(role='document')
+		.modal-content
+			.smodal-callback
+				.smodal-callback__inner
+					span.smodal__close(data-dismiss="modal")
+						+icon('close')
+
+					form.smodal-form.needs-validation(id="form-callback", action="form.php", method="POST", novalidate)
+						<input type="hidden" name="utm_campaign" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>" />
+						<input type="hidden" name="utm_content" value="<?php echo isset($_GET['utm_content']) ? $_GET['utm_content'] : '' ;?>" />
+						<input type="hidden" name="utm_medium" value="<?php echo isset($_GET['utm_medium']) ? $_GET['utm_medium'] : '' ;?>" />
+						<input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>" />
+						<input type="hidden" name="utm_term" value="<?php echo isset($_GET['utm_content']) ? $_GET['utm_term'] : '' ;?>" />
+						<input type="hidden" name="UF_CRM_GA_CID" value="<?php echo $UaParser->getCid(); ?>" />
+
+						input(type="hidden" name="title" value="Завявка с фомы Обратный звонок")
+						input(type="hidden" name="admin_email" value="info@izumrudgorod-sochi.ru")
+						input(type="hidden" name="project_name" value="Изумрудный город")
+						input(type="hidden" name="form_subject" value="Форма Обратный звонок")
+
+						.form__title.title Нужна консультация?
+						.form__desc Оставьте свои контактные данные, и мы перезвоним вам, чтобы ответить на любые вопросы
+						.form__group
+							label.input
+								input.input__input(type="text", name="name")
+								span.input__label ваше имя
+
+						.form__group
+							label.input
+								input.input__input(type="tel", data-phone minlength="11", maxlength="16", placeholder="+7 (___) ___-__-__", name="phone", required)
+								span.input__label ваш телефон*
+
+						.form__politics
+							label.form__politics-check.check
+								input.check__input(type="checkbox", required, checked)
+								span.check__box
+								span.check__label Согласен с
+								a(href="politics.html" target="_blank").form__politics-link политикой конфиденциальности
+						
+						button.form__submit.btn-sec(type="submit") Позвоните мне
+
+
+#modal-price.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+	.modal-dialog.modal-dialog-centered(role='document')
+		.modal-content
+			.smodal-callback
+				.smodal-callback__inner
+					span.smodal__close(data-dismiss="modal")
+						+icon('close')
+
+					form.smodal-form.form.needs-validation(id="form-price", action="form.php", method="POST", novalidate)
+						<input type="hidden" name="utm_campaign" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>" />
+						<input type="hidden" name="utm_content" value="<?php echo isset($_GET['utm_content']) ? $_GET['utm_content'] : '' ;?>" />
+						<input type="hidden" name="utm_medium" value="<?php echo isset($_GET['utm_medium']) ? $_GET['utm_medium'] : '' ;?>" />
+						<input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>" />
+						<input type="hidden" name="utm_term" value="<?php echo isset($_GET['utm_content']) ? $_GET['utm_term'] : '' ;?>" />
+						<input type="hidden" name="UF_CRM_GA_CID" value="<?php echo $UaParser->getCid(); ?>" />
+
+						input(type="hidden" name="title" value="Завявка с фомы Запросить цену")
+						input(type="hidden" name="admin_email" value="info@izumrudgorod-sochi.ru")
+						input(type="hidden" name="project_name" value="Изумрудный город")
+						input(type="hidden" name="form_subject" value="Форма Запросить цену")
+
+						.form__title.title Нужна консультация?
+						.form__desc Оставьте свои контактные данные, и мы перезвоним вам, чтобы ответить на любые вопросы
+						.form__group
+							label.input
+								input.input__input(type="text", name="name")
+								span.input__label ваше имя
+
+						.form__group
+							label.input
+								input.input__input(type="tel", data-phone minlength="11", maxlength="16", placeholder="+7 (___) ___-__-__", name="phone", required)
+								span.input__label ваш телефон*
+
+						.form__politics
+							label.form__politics-check.check
+								input.check__input(type="checkbox", required, checked)
+								span.check__box
+								span.check__label Согласен с
+								a(href="politics.html" target="_blank").form__politics-link политикой конфиденциальности
+						
+						button.form__submit.btn-sec(type="submit") Позвоните мне
+
+#modal-application.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+	.modal-dialog.modal-dialog-centered(role='document')
+		.modal-content
+			.smodal-application
+				span.smodal__close(data-dismiss="modal")
+					+icon('close')
+				.smodal-application__title.title Спасибо!
+				.smodal-application__txt Мы свяжемся с вами в ближайшее время
+				button.smodal-application__btn.btn-sec(type="button" data-dismiss="modal") Закрыть
+
+

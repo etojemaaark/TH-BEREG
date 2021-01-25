@@ -1,0 +1,69 @@
+.input {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 20px 16px;
+  color: rgba(51, 51, 51, .8);
+  font-size: 14px;
+  background-color: $white;
+
+  &:hover {
+    .input__label {
+      color: $black;
+    }
+  }
+
+  &__label {
+    flex-shrink: 0;
+    padding-right: 8px;
+  }
+
+  &__input {
+    order: 1;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+
+    &:hover {
+
+    }
+
+    &:focus {
+      outline: none;
+
+      & + .input__label {
+        color: $black;
+      }
+    }
+
+
+    &[type=tel] {
+      &:hover {
+        &::placeholder {
+          color: $black;
+        }
+      }
+  
+      &:focus {
+        &::placeholder {
+          color: $black;
+        }
+      }
+
+      &::placeholder {
+        color: rgba(0, 0, 0, 0);
+      }
+    }
+
+    &:-webkit-autofill {
+      -webkit-box-shadow: inset 0 0 0 50px white;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .input {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+}

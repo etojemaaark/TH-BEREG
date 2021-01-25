@@ -1,0 +1,11 @@
+.logo {
+  color: $secondary;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+
+  &:hover {
+    color: #14715D;
+    text-decoration: none;
+  }
+}

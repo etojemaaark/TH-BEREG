@@ -1,0 +1,248 @@
+.smodal {
+  &__close {
+    cursor: pointer;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+
+    svg {
+      padding: 8px;
+      fill: none;
+      width: 12px;
+      height: 12px;
+      box-sizing: content-box;
+      stroke: #8D8D8D;
+      stroke-width: 2px;
+    }
+
+    &:hover {
+      svg {
+        stroke: #364126;
+      }
+    }
+    
+    &:active {
+      svg {
+        stroke: #414E2E;
+      }
+    }
+  }
+
+  &-callback {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 34px;
+    padding-bottom: 48px;
+    background-color: $secondary-light;
+  }
+
+  &-form {
+    display: flex;
+    flex-direction: column;
+    &__title {
+      font-size: 28px;
+      line-height: 140%;
+      letter-spacing: 0.03em;
+      margin-bottom: 24px;
+    }
+    &__desc {
+      margin-bottom: 36px;
+    }
+    &__group {
+      margin-bottom: 24px;
+    }
+    &__label {
+      display: block;
+      color: $black;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 8px;
+    }
+    &__input {
+      width: 100%;
+      height: 50px;
+      border: none;
+      border-bottom: 1px solid $black;
+      font-size: 14px;
+      padding: 0;
+      &:placeholder {
+        color: $black;
+      }
+    }
+    &__txt {
+      margin: 0;
+    }
+    &__btn {
+      align-self: center;
+      display: flex;
+      justify-content: center;
+      font-size: 14px;
+      width: 100%;
+      height: 60px;
+      margin-top: 40px;
+      margin-bottom: 0;
+    }
+    &__politics {
+      display: flex;
+      align-items: center;
+      padding-top: 12px;
+      font-size: 12px;
+      line-height: 14px;
+
+      .input-checkbox {
+        display: inline-flex;
+        align-items: center;
+      }
+      .input-checkbox__box {
+        border-color: $black;
+      }
+      .smodal-form__politics-link {
+        margin-left: 5px;
+        color: $black;
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+#modal-plan {
+  .modal-dialog  {
+    max-width: 920px;
+  }
+}
+
+.smodal-plan {
+  padding: 60px;
+  border-radius: 0;
+
+  &__header {
+    margin-bottom: 50px;
+  }
+
+  &__img {
+    max-height: 370px;
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 24px;
+  }
+
+  &__subtitle {
+    margin-bottom: 16px;
+  }
+
+  &__desc {
+    margin-bottom: 24px;
+  }
+
+  &__area {
+    font-weight: 500;
+  }
+
+  .smodal-form__group:first-of-type {
+    margin-bottom: 12px;
+  }
+
+  .smodal-form__politics {
+    padding-top: 8px;
+  }
+
+  .smodal-form__btn {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 100%;
+    height: 50px;
+  }
+}
+
+.smodal-application {
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  width: 100%;
+  padding: 50px 30px 34px;
+  &__title {
+    font-size: 28px;
+    line-height: 140%;
+    margin-bottom: 24px;
+  }
+  &__txt {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 32px;
+  }
+  &__btn {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .smodal {
+    &-form {
+      &__title {
+        margin-bottom: 24px;
+        font-size: 24px;
+        line-height: 140%;
+      }
+
+      &__desc {
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+
+      &__politics {
+        margin-top: 12px;
+        padding-top: 0;
+        font-size: 10px;
+      }
+
+      &__group {
+        margin-bottom: 10px;
+      }
+
+      &__btn {
+        margin-top: 32px;
+        height: 50px;
+
+        &::before {
+          width: 50px;
+        }
+      }
+    }
+
+    &-callback {
+      padding: 36px 15px;
+    }
+
+    &-application {
+      padding: 36px 15px;
+
+      &__title {
+        font-size: 24px;
+        line-height: 140%;
+      }
+
+      &__btn {
+        height: 50px;
+
+        &::before {
+          width: 50px;
+        }
+      }
+    }
+  }
+}

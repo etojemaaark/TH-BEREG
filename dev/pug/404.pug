@@ -1,0 +1,12 @@
+extends template/404
+
+block variables
+	- var title = 'Купить коттедж в Сочи - Изумрудный город'
+	- var description = 'Купить таунхаус в жилом комплексе комфорт-класса у моря для жизни и отдыха в городе Сочи. Цены от застройщика.'
+
+block content
+	include ../blocks/404/404
+
+block script
+	script(src="static/js/libs.min.js")
+	script(src="static/js/main.js")

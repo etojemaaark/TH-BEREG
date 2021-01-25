@@ -1,0 +1,35 @@
+section.main#main
+  .container
+    .row
+      .main__left.col-md-5
+        .main__info
+          h1.main__title.title
+            span клубный поселок
+            span Берег
+				
+          .main__desc
+            p Продажа таунхаусов бизнес-класса 
+              b от 7 500 000 ₽ 
+              | в 15 км от центра Сочи
+
+          a.main__more.btn-sec(href="#about") Узнать больше
+
+          .main__left-footer
+            .main__mouse
+              .main__mouse-mouse
+                +icon("mouse-down", "main__mouse-mouse-top")
+                +icon("mouse-down", "main__mouse-mouse-down")
+            
+              span.main__mouse-text Листайте вниз
+
+      .main__right.col
+        .main__img
+          img(src="static/images/content/sec1.jpg", alt="Изумрудный город")
+
+    .main__footer
+      .main__mouse
+        .main__mouse-mouse
+          +icon("mouse-down", "main__mouse-mouse-top")
+          +icon("mouse-down", "main__mouse-mouse-down")
+      
+        span.main__mouse-text Листайте вниз

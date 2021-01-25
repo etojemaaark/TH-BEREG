@@ -1,0 +1,22 @@
+.consultation
+	.inner
+		.container
+			form.consultation-form.form(action="form.php" method="POST" onsubmit="yaCounter64803034.reachGoal('otpravka_voprosy'); gtag('event', 'voprosy', { 'event_category': 'otpravform_voprosy', 'event_action': 'click' }); gtag('event', 'page_view', { 'page_path': '/otpavka-voprosy-form' });")
+				input(type="hidden" name="title" value="Завявка с фомы Нужна консультация?")
+				input(type="hidden" name="admin_email" value="info@izumrudgorod-sochi.ru")
+				input(type="hidden" name="project_name" value="Изумрудный город")
+				input(type="hidden" name="form_subject" value="Форма Нужна консультация?")
+
+				h2.consultation__title.title Нужна консультация?
+
+				.consultation-form__title Пройдите наш опрос и получите индивидуальную подборку планировок
+				.consultation-form__group.form__group
+					label.consultation-form__label.form__label(for="c-name") Ваше имя
+					input.consultation-form__input.form__input#c-name(type="text" name="name")
+				.consultation-form__group.form__group
+					label.consultation-form__label.form__label(for="c-phone") Ваш телефон
+					input.consultation-form__input.form__input#c-phone(type="tel", data-phone pattern='[\+]7[\(][0-9]{3}[\)][0-9]{3}[\-][0-9]{2}[\-][0-9]{2}', minlength='16', inputmode='numeric', name="phone")
+
+				button.consultation-form__btn(type="submit") Получить консультацию
+				.consultation-form__txt Нажимая кнопку  вы соглашаетесь с 
+					a(href="politics.html" target="_blank") политикой конфиденциальности

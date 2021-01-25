@@ -1,0 +1,41 @@
+section.plans#plans
+  .container
+    h2.plans__title.title Планировки
+    .plans__desc
+      p Общий метраж таунхаусов составляет 105—207 м<sup>2</sup>, в каждом доме три этажа. Дата сдачи комплекса: 1 квартал 2022 г. Минимальная цена одного дома 7,5 млн рублей.
+
+    ul.plans__list
+        li.plans__list-item
+            .plans__list-img
+                include ../../static/images/content/plan-1.svg
+            h3.plans__list-title
+                span 1
+                |-й этаж
+        li.plans__list-item
+            .plans__list-img
+                include ../../static/images/content/plan-2.svg
+            h3.plans__list-title
+                span 2
+                |-й этаж
+        li.plans__list-item
+            .plans__list-img
+                include ../../static/images/content/plan-3.svg
+            h3.plans__list-title
+                span 3
+                |-й этаж
+        li.plans__list-item
+            .plans__list-img
+                include ../../static/images/content/plan-4.svg
+            h3.plans__list-title
+                span 4
+                |-й этаж
+    .plans__info
+      p.plans__info-desc На первых этажах домов расположены кухня-гостиная, гостевой санузел, кладовка и другие помещения общего пользования. Второй и третий уровни занимают просторные спальни с панорамными окнами и балконами.
+
+      .plans__info-footer
+        h3.plans__info-title Станьте владельцем таунхауса!
+
+        .plans__info-arrow
+          +icon("big-arrow")
+
+        button.plans__price.btn-sec(data-toggle="modal", data-target="#modal-price", onclick="yaCounter66156607.reachGoal('stoimost_zapros'); gtag('event', 'stoimost', { 'event_category': 'podbor_stoimost', 'event_action': 'click' }); gtag('event', 'page_view', { 'page_path': '/stoimost-form' });") Запросить цену

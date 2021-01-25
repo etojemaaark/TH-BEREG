@@ -1,0 +1,82 @@
+include ../utils/mixins
+block variables
+
+//- |<?php
+//- |class UniversalAnalyticsCookieParser{
+//- |    function __construct() {
+//- |        if( isset($_COOKIE["_ga"]) ){
+//- |            return $this->getCid();
+//- |        }
+//- |    }
+//- |    public function parseCookie()
+//- |    {
+//- |        list($version,$domainDepth, $cid1, $cid2) = preg_split('[\.]', $_COOKIE["_ga"],4);
+//- |        return array('version' => $version, 'domainDepth' => $domainDepth, 'cid' => $cid1.'.'.$cid2);
+//- |    }
+//- |    public function getCid()
+//- |    {
+//- |        $contents = $this->parseCookie();
+//- |        return $contents['cid'];
+//- |    }
+//- |}
+//- |
+//- |$UaParser = new UniversalAnalyticsCookieParser();
+//- |?>
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+	head
+		meta(charset="utf-8")
+		title #{title}
+		<!--[if IE]>
+		meta(http-equiv='X-UA-Compatible', content="IE = edge")
+		<![endif]-->
+		meta(name="viewport" content="width=device-width,initial-scale=1")
+		meta(name="keywords" content="")
+		meta(name="description" content=description)
+
+		meta(property="og:title" content=title)
+		meta(property="og:description" content=description)
+		meta(property="og:type" content="website")
+		meta(property="og:url" content="https://izumrudgorod-sochi.ru/")
+		meta(property="og:image" content="https://izumrudgorod-sochi.ru/static/images/content/sec1.jpg")
+
+		link(href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet")
+		link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous")
+		link(rel="stylesheet" type='text/css' href="static/css/styles.min.css")
+		link( href="static/images/general/favicon.png" rel="shortcut icon" type="image/png")
+
+		<!--[if lt IE 9]>
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js")
+		<![endif]-->
+
+		script(async src="https://www.googletagmanager.com/gtag/js?id=UA-174458940-1")
+		script
+			include ../../seo/metrics.js
+
+		script(src="//script.marquiz.ru/v1.js")
+		script
+			include ../../seo/marquiz.js
+	body
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KM4SGJL" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<noscript><div><img src="https://mc.yandex.ru/watch/66156607" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+		main.wrapper
+			include ../../blocks/header/header
+			block content
+			include ../../blocks/footer/footer
+			include ../../blocks/modals/modals
+
+		script(src="static/js/jquery-3.3.1.min.js")
+		script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js")
+
+		block script
+
+		script(src="https://ga2.b24.macte.pro/b242ga.js")
+		script
+			|B242GAInit({
+			|      portal:'https://bvbrealty.bitrix24.ru/',
+			|  presets:{
+			|    'GA_COUNTER':'UA-173499375-1'
+			|  }
+			|})

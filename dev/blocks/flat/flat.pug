@@ -1,0 +1,119 @@
+section.s-tabs.flat#planing
+	.container
+		.flat__title Выберите квартиру по <span class="active" data-tab="1">параметрам</span> или на <span data-tab="2">этаже</span>
+		.flat-content.flat-content_active#flat1
+			.filter.row
+				.filter__radio-btn.d-flex.col-xl-4.col-lg-6
+					.radiobox.radiobox_type1
+						input(id="radio-field-1" name="radio" checked value="3" type="radio" data-type="3")
+						label.radiomark(for="radio-field-1") Студия
+					.radiobox.radiobox_type2
+						input(id="radio-field-2" name="radio" value="1" type="radio" data-type="1")
+						label.radiomark(for="radio-field-2") 1
+					.radiobox.radiobox_type3
+						input(id="radio-field-3" name="radio" value="2" type="radio" data-type="2")
+						label.radiomark(for="radio-field-3") 2
+					.radiobox.radiobox_type4
+						input(id="radio-field-4" name="radio" value="4" type="radio" data-type="4")
+						label.radiomark(for="radio-field-4") Пентхаус
+				.filter__item.col-xl-4.col-lg-3.col-md-6
+					.range-slider.range-1.d-flex.align-items-center
+						.range-slider__fluid.d-flex.align-items-center
+							input.num-floor-min.range-number(type='number', value='2', min='2', max='12')
+							|	эт.
+							.range-slider__line 
+							input.num-floor-max.range-number(type='number', value='12', min='2', max='12')
+							| эт.
+						input.floor-min.range-filter(value='2', min='2', max='12', step='1', type='range')
+						input.floor-max.range-filter(value='12', min='2', max='12', step='1', type='range')
+				.filter__item.col-xl-4.col-lg-3.col-md-6
+					.range-slider.range-slider--wdh404.range-2.d-flex.align-items-center
+						.range-slider__fluid.d-flex.align-items-center
+							input.num-area-min.range-number(type='number', value='30', min='30', max='220')
+							| м
+							sup 2
+							.range-slider__line 
+							input.num-area-max.range-number(type='number', value='220', min='30', max='220')
+							| м
+							sup 2
+						input.area-min.range-filter(value='30', min='30', max='220', step='1', type='range')
+						input.area-max.range-filter(value='220', min='30', max='220', step='1', type='range')
+				
+			.tabs__apartments 
+				.apartments
+					form.row
+						.col-12
+							input#search(type='hidden', placeholder='Start typing...', autocomplete='off')
+							output#products.row Показать еще
+
+		.flat-content#flat2
+			.floor-wrapper
+				.floor-filter
+					button.penthouse-btn.floor-filter__btn(type="button" data-floor="12") 12
+					button.flat-btn.floor-filter__btn(type="button" data-num="90" data-floor="11") 11
+					button.flat-btn.floor-filter__btn(type="button" data-num="80" data-floor="10") 10
+					button.flat-btn.floor-filter__btn(type="button" data-num="70" data-floor="9") 9
+					button.flat-btn.floor-filter__btn(type="button" data-num="60" data-number="70" data-floor="8") 8
+					button.flat-btn.floor-filter__btn(type="button" data-num="50" data-floor="7") 7
+					button.flat-btn.floor-filter__btn(type="button" data-num="40" data-floor="6") 6
+					button.flat-btn.floor-filter__btn(type="button" data-num="30" data-floor="5") 5
+					button.flat-btn.floor-filter__btn(type="button" data-num="20" data-number="20" data-floor="4") 4
+					button.flat-btn.floor-filter__btn(type="button" data-num="10" data-floor="3") 3
+					button.flat-btn.floor-filter__btn.floor-filter__btn_active(type="button" data-num="0" data-floor="2") 2
+				.floor-list
+					.floor-item.floor-item_active#floor1
+						//- include floor.svg
+						//- include penthouse.svg
+						.flat-info.flat-info_type1
+							.flat-info__title Квартира с 1 комнатой и кухней-гостиной
+							.flat-info__area 38,62 м
+								sup 2
+
+						.flat-info.flat-info_type2
+							.flat-info__title Квартира с 2 комнатами и кухней-гостиной
+							.flat-info__area 69,37 м
+								sup 2
+						.flat-info.flat-info_type3
+							.flat-info__title Квартира студия
+							.flat-info__area 31,61 м
+								sup 2
+						.flat-info.flat-info_type4
+							.flat-info__title Квартира с 1 комнатой и кухней-гостиной
+							.flat-info__area 35,29 м
+								sup 2
+						.flat-info.flat-info_type5
+							.flat-info__title Квартира с 2 комнатами и кухней-гостиной
+							.flat-info__area 49,27 м
+								sup 2	
+						.flat-info.flat-info_type6
+							.flat-info__title Квартира с 2 комнатами и кухней-гостиной
+							.flat-info__area 49,27 м
+								sup 2
+						.flat-info.flat-info_type7
+							.flat-info__title Квартира с 1 комнатой и кухней-гостиной
+							.flat-info__area 35,29 м
+								sup 2
+						.flat-info.flat-info_type8
+							.flat-info__title Квартира студия
+							.flat-info__area 31,61 м
+								sup 2
+						.flat-info.flat-info_type9
+							.flat-info__title Квартира с 2 комнатами и кухней-гостиной
+							.flat-info__area 69,37 м
+								sup 2	
+						.flat-info.flat-info_type10
+							.flat-info__title Квартира с 1 комнатой и кухней-гостиной
+							.flat-info__area 38,62 м
+								sup 2
+						.flat-info.flat-info_type11
+							.flat-info__title Пентхаус
+							.flat-info__area 150,56 м
+								sup 2
+						.flat-info.flat-info_type12
+							.flat-info__title Пентхаус
+							.flat-info__area 150,56 м
+								sup 2
+						.flat-info.flat-info_type13
+							.flat-info__title Пентхаус
+							.flat-info__area 210,13 м
+								sup 2

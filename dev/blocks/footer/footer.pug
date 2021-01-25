@@ -1,0 +1,59 @@
+footer.footer
+  .container
+    .row
+      #contacts.col-md-5.col-lg-6.order-2.order-md-1
+        .footer__left
+          .footer__logo
+            a(href="#main").logo.home-logo
+              span.logo__text Изумрудный город
+
+          ul.footer__menu.footer__menu-nav
+            li.footer__menu-item
+              a(href="#about") О проекте
+            li.footer__menu-item
+              a(href="#vantage") Преимущества
+            li.footer__menu-item
+              a(href="#plans") Планировки
+            li.footer__menu-item
+              a(href="#location") Расположение
+            li.footer__menu-item
+              a(href="#gallery") Галерея
+
+          a.footer__phone(href="tel:8(800)600-43-35") 8 (800) 600-43-35
+          a.footer__email(href="mailto:info@izumrudgorod-sochi.ru") info@izumrudgorod-sochi.ru
+
+      .col.col-lg-6.d-flex.align-items-center.order-1.order-md-2
+        form.footer__form.form.needs-validation(id="form-consultation", action="form.php", novalidate)
+          <input type="hidden" name="utm_campaign" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>" />
+          <input type="hidden" name="utm_content" value="<?php echo isset($_GET['utm_content']) ? $_GET['utm_content'] : '' ;?>" />
+          <input type="hidden" name="utm_medium" value="<?php echo isset($_GET['utm_medium']) ? $_GET['utm_medium'] : '' ;?>" />
+          <input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>" />
+          <input type="hidden" name="utm_term" value="<?php echo isset($_GET['utm_content']) ? $_GET['utm_term'] : '' ;?>" />
+          <input type="hidden" name="UF_CRM_GA_CID" value="<?php echo $UaParser->getCid(); ?>" />
+
+          input(type="hidden" name="title" value="Завявка с фомы Нужна консультация?")
+          input(type="hidden" name="admin_email" value="info@izumrudgorod-sochi.ru")
+          input(type="hidden" name="project_name" value="Изумрудный город")
+          input(type="hidden" name="form_subject" value="Форма Нужна консультация?")
+
+          .form__title.title Нужна консультация?
+          .form__desc Оставьте свои контактные данные, и мы перезвоним вам, чтобы ответить на любые вопросы
+          .form__group
+            label.input
+              input.input__input(type="text", name="name")
+              span.input__label ваше имя
+
+          .form__group
+            label.input
+              input.input__input(type="tel", minlength="11", maxlength="16", placeholder="+7 (___) ___-__-__", required, name="phone")
+              span.input__label ваш телефон*
+
+          .form__politics
+            label.form__politics-check.check
+              input.check__input(type="checkbox", checked, required)
+              span.check__box
+              span.check__label Согласен с
+
+              a(href="politics.html" target="_blank").form__politics-link политикой конфиденциальности
+          
+          button.form__submit.btn-sec(type="submit") Позвоните мне

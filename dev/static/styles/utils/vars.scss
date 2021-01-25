@@ -1,0 +1,29 @@
+// Colors
+$white: #ffffff;
+$black: #333333;
+$green: #57683d;
+$light: #f4f4f4;
+$primary: #deb54b;
+$secondary: #13638f;
+$secondary-dark: rgba(51, 51, 51, 0.6);
+$secondary-light: #ebf4f3;
+$hover: #397baa;
+$active: #0e4665;
+
+// Sizes
+$base-font-size: 16px;
+
+$breakpoints: (
+	"phone": 400px,
+	"phone-wide": 480px,
+	"phablet": 560px,
+	"tablet-small": 640px,
+	"tablet": 768px,
+	"tablet-wide": 1024px,
+	"desktop": 1248px,
+	"desktop-wide": 1440px,
+);
+
+$content-size: 1024px;
+
+// Fonts

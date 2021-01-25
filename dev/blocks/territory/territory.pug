@@ -1,0 +1,57 @@
+section.territory
+	.container
+		h2.territory__title.title Сосновый Бор — прекрасное место
+		.row.territory__list
+			.col-xl-3.col-md-6
+				.territory-item
+					.territory-item__img
+						img(src="static/images/general/territory1.svg", alt="")
+					span.territory-item__txt Фонтан во <br>дворе дома
+			.col-xl-3.col-md-6
+				.territory-item
+					.territory-item__img
+						img(src="static/images/general/territory2.svg", alt="")
+					span.territory-item__txt Лаунж-зона <br>с мангалом
+			.col-xl-3.col-md-6
+				.territory-item
+					.territory-item__img
+						img(src="static/images/general/territory3.svg", alt="")
+					span.territory-item__txt Закрытая парковка <br>на 48 машиномест
+			.col-xl-3.col-md-6
+				.territory-item
+					.territory-item__img
+						img(src="static/images/general/territory4.svg", alt="")
+					span.territory-item__txt Ландшафтный дизайн <br>по авторскому проекту 
+
+
+		.territory-slider
+			.territory-slider__item
+				.territory-slider-item
+					img(src="static/images/content/territory-slide1.jpg", alt="")
+			.territory-slider__item
+				.territory-slider-item
+					img(src="static/images/content/territory-slide2.jpg", alt="")
+			.territory-slider__item
+				.territory-slider-item
+					img(src="static/images/content/territory-slide3.jpg", alt="")
+
+			.territory-slider__item
+				.territory-slider-item
+					img(src="static/images/content/territory-slide1.jpg", alt="")
+			.territory-slider__item
+				.territory-slider-item
+					img(src="static/images/content/territory-slide2.jpg", alt="")
+			.territory-slider__item
+				.territory-slider-item
+					img(src="static/images/content/territory-slide3.jpg", alt="")
+
+		.territory-controls
+			.territory-controls__progress
+				.territory-progress(role="progressbar" aria-valuemin="0" aria-valuemax="100")
+					span.territory-progress__label
+			.territory-controls__arrows
+				button.advantages-controls__btn.territory-controls__prev(type="button")
+					+icon('prev')
+				button.advantages-controls__btn.territory-controls__next(type="button")
+					+icon('next')
+

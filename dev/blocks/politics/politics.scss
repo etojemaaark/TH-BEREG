@@ -1,0 +1,18 @@
+.policy {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__title {
+    margin-bottom: 24px;
+    font-weight: 700;
+  }
+
+  &__text {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  &__list {
+    padding-left: 18px;
+  }
+}
