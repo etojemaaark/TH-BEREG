@@ -136,6 +136,11 @@
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
+			&-item {
+				&:nth-child(n + 2) {
+					margin-top: 80px;
+				}
+			}
 			&-img {
 				padding-bottom: 18px;
 				svg {
