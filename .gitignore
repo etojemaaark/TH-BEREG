@@ -2,7 +2,6 @@
 package-lock.json
 node_modules
 .idea
-build
 /*.exe.stackdump
 form.php
 robots.txt
