@@ -138,7 +138,14 @@
 			}
 		}
 	}
-
+	&__collapse-content {
+		transition: all 0.3s ease 0s;
+		.advantages__desc {
+			p {
+				margin: 0;
+			}
+		}
+	}
 	&__collapse-content_sm {
 		padding: 0 15px;
 		color: $white;

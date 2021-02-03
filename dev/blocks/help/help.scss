@@ -1,139 +1,139 @@
 .help {
-  width: 100%;
-  color: #fff;
-  background-color: $secondary;
-  overflow: hidden;
+	width: 100%;
+	color: #fff;
+	background-color: $secondary;
+	overflow: hidden;
 
-  .container {
-    position: relative;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    background: url(../images/general/help-main-bg.svg) no-repeat;
-    background-position: center right;
+	.container {
+		position: relative;
+		padding-top: 80px;
+		padding-bottom: 80px;
+		background: url(../images/general/help-main-bg.svg) no-repeat;
+		background-position: center right;
 
-    &::after {
-      content: url(../images/general/help-bg.svg);
-      position: absolute;
-      top: 50%;
-      right: 0;
-      transform: translateY(-50%);
-      display: block;
-      width: 428px;
-      height: 468px;
-      background: url(../images/general/help-img.png) no-repeat;
-      background-size: 316px 382px;
-      background-position: center;
-      background-clip: padding-box;
-      z-index: 1;
-    }
-  }
+		&::after {
+			content: url(../images/general/help-bg.svg);
+			position: absolute;
+			top: 50%;
+			right: 0;
+			transform: translateY(-50%);
+			display: block;
+			width: 428px;
+			height: 468px;
+			background: url(../images/general/help-img.png) no-repeat;
+			background-size: 316px 382px;
+			background-position: center;
+			background-clip: padding-box;
+			z-index: 1;
+		}
+	}
 
-  &-info {
-    &__title {
-      color: $white;
-      margin-bottom: 32px;
-      max-width: 605px;
+	&-info {
+		&__title {
+			color: $white;
+			margin-bottom: 32px;
+			max-width: 605px;
 
-      b {
-        color: $primary;
-      }
-    }
+			b {
+				color: $primary;
+			}
+		}
 
-    &__txt {
-      margin-bottom: 48px;
-      max-width: 570px;
-      font-size: 18px;
-      line-height: 140%;
-    }
+		&__txt {
+			margin-bottom: 48px;
+			max-width: 570px;
+			font-size: 18px;
+			line-height: 140%;
+		}
 
-    &__btn {
-      width: 255px;
-      text-align: center;
-    }
-  }
+		&__btn {
+			width: 255px;
+			text-align: center;
+		}
+	}
 }
 
 @media (max-width: 1199px) {
-  .help {
-    &-info {
-      &__title {
-        font-size: 32px;
-        max-width: 550px;
-      }
-    }
-  }
+	.help {
+		&-info {
+			&__title {
+				font-size: 32px;
+				max-width: 550px;
+			}
+		}
+	}
 }
 
 @media (max-width: 991px) {
-  .help {
-    .container {
-      padding-top: 48px;
-      padding-bottom: 48px;
-      background: url(../images/general/help-main-sm-bg.svg) no-repeat;
-      background-position: bottom 30px right 220px;
+	.help {
+		.container {
+			padding-top: 48px;
+			padding-bottom: 48px;
+			background: url(../images/general/help-main-sm-bg.svg) no-repeat;
+			background-position: bottom 30px right 220px;
 
-      &::after {
-        width: 248px;
-        height: 272px;
-        background-size: 184px 222px;
-      }
-    }
+			&::after {
+				width: 248px;
+				height: 272px;
+				background-size: 184px 222px;
+			}
+		}
 	}
 
 	.help-info__title {
-    margin-bottom: 16px;
-    font-size: 28px;
-    max-width: 480;
-  }
+		margin-bottom: 16px;
+		font-size: 28px;
+		max-width: 480;
+	}
 
 	.help-info__txt {
-    margin-bottom: 36px;
-    max-width: 460px;
+		margin-bottom: 36px;
+		max-width: 460px;
 		font-size: 14px;
 		line-height: 20px;
-  }
-  
-  .help-info__btn {
-    height: 50px;
-  }
+	}
+
+	.help-info__btn {
+		height: 50px;
+	}
 }
 
 @media (max-width: 767px) {
 	.help {
-    background-image: none;
+		background-image: none;
 
-    .container {
-      padding-top: 20px;
-      padding-bottom: 36px;
+		.container {
+			padding-top: 20px;
+			padding-bottom: 36px;
 
-      &::after {
-        display: none;
-      }
-    }
+			&::after {
+				display: none;
+			}
+		}
 	}
 
-  .help-info__txt {
-    max-width: unset;
-  }
+	.help-info__txt {
+		max-width: unset;
+	}
 	.help-info__btn {
 		width: 100%;
 	}
 }
 
 @media (max-width: 575px) {
-  .help {
-    &-info {
-      &__title {
-        font-size: 26px;
+	.help {
+		&-info {
+			&__title {
+				font-size: 26px;
 
-        span {
-          white-space: normal !important;
-        }
+				span {
+					white-space: normal !important;
+				}
 
-        b {
-          white-space: nowrap !important;
-        }
-      }
-    }
-  }
+				b {
+					white-space: nowrap !important;
+				}
+			}
+		}
+	}
 }
